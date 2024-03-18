@@ -1,0 +1,253 @@
+/********** Template CSS **********/
+*{
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: #F7F8FC;
+    font-family: "Roboto Condensed";
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.3333333333%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+}
+
+/**Para dispositivos mobiles**/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+  
+.clearfix:after, .row:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+:root {
+    --primary: #3CB815;
+    --secondary: #F65005;
+    --light: #F7F8FC;
+    --dark: #111111;
+}
+
+
+/*** Section Header ***/
+.section-header {
+    position:relative;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 200px;
+    float: left;
+}
+
+.section-header::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 2px;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--secondary);
+}
+
+.section-header.text-start::before,
+.section-header.text-start::after {
+    left: 0;
+    transform: translateX(0);
+}
+
+/*** Mejores Frutas ***/
+
+.container_mejores{
+    width: 100%;
+}
+
+.div_mejores{
+    width: 100%;
+    float: left;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.div_mejores .col-6 img{
+    border-radius: 100%;   
+    padding: 2%;
+    height: 500px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.div_mejores .col-6{
+    padding: auto;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.container_caracteriza{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: 5%;
+}
+
+.div-caract-cont{
+    align-items: center;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: 5%;
+    background-color: #FFFFFF;
+
+}
+
+.div-nuestros{
+    background-color: white;
+    
+}
+
+.div-nuestros .section-header {
+    background-color: white;
+    position:relative;
+    width: 50%;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 200px;
+    float: left;
+}
+
+.div-nuestros .section-header::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    top: 10%;
+    left: 0%;
+    transform: translateX(-50%);
+    background: var(--primary);
+}
+
+.div-nuestros .section-header::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 2px;
+    top: 12%;
+    left: 0%;
+    transform: translateX(-50%);
+    background: var(--secondary);
+}
+
+.div-nuestro-img{
+    width: 100%;
+}
+
+.div-img {
+    padding: auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-img img{
+    padding: auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.div-img .col-12{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.col-sm-12{
+    padding: 20px;
+    color: #17100A;
+    background-color: #eeeeee;
+}
+
+.col-sm-4 a{
+    color: black;
+}
+
+.col-sm-4 {
+    color: black;
+    background-color: #eeeeee;
+}
+
+.div-fincas{
+    background-color: #3BB814;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+.div-fincas h1{
+    color: white;
+    font-weight: bold;33
+    
+}
+
+.col-5{
+    padding: 10%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+.div-fincas a{
+    background-color: #F65004;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+}
+
